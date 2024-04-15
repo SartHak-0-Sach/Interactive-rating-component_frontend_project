@@ -1,5 +1,211 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #141519;
+}
+
+.container {
+    height: 95vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.success {
+    height: 40rem;
+    width: 45rem;
+    background-color: #19202a;
+    border-radius: 2rem;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.success__value {
+    color: #fb7413;
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    background-color: #252d37;
+    font-weight: 700;
+}
+
+.success h1 {
+    color: white;
+    font-size: 2.8rem;
+}
+
+.success__bottom {
+    font-size: 1.5rem;
+    color: #959eac;
+    text-align: center;
+    padding: 5px;
+    line-height: 2.5rem;
+}
+
+.card {
+    height: 40rem;
+    width: 45rem;
+    background-color: #19202a;
+    border-radius: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.card__image {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #252d37;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card h1 {
+    color: #fff;
+    font-size: 2.8rem;
+}
+
+.card p {
+    color: #959eac;
+    font-size: 1.5rem;
+    padding-right: 30px;
+    line-height: 2.5rem;
+}
+
+.card ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.card li {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #252d37;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.card li:hover {
+    background-color: #959eac;
+}
+
+.card .list__change {
+    background-color: #fb7413;
+}
+
+.card button {
+    height: 4rem;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: #fb7413;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        height: 40rem;
+        width: 40rem;
+    }
+
+    .card p {
+        padding-right: 20px;
+    }
+
+    .card li {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2.5rem;
+    }
+
+    .success {
+        height: 40rem;
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        height: 40rem;
+        width: 35rem;
+    }
+
+    .card li {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 2rem;
+    }
+
+    .card p {
+        padding-right: 0px;
+    }
+
+    .success {
+        height: 40rem;
+        width: 35rem;
+        padding: 4rem;
+    }
 }
